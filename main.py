@@ -21,10 +21,13 @@ def main():
     print("----------- Word Count ----------")
     print(total_words(words))
     print("--------- Character Count -------")
+
     list_chars = list_dict(char_count(words))
+
     for chars in list_chars:
         if chars["char"].isalpha():
             print(f"{chars['char']}: {chars['num']}")
+
     print("============= END ===============")
 
 
